@@ -19,6 +19,8 @@
 
     <!-- 
         git仓库：
+        初始化git仓库
+        git init
         1、查询git仓库中文件状态
         git status
         2、跟踪文件，将文件放入暂存区
@@ -44,6 +46,15 @@
         #在一行上显示最近两条提交历史的信息，并自定义输出格式
         # %h 提交的简写哈希值 %an作者名字 %ar作者修订日期，按多久以前的方式显示 %s提交说明
         git log -2 --pretty=format:"%h | %an | %ar | %s"
+        11、回退到指定版本
+        #在一行上显示所有的提交历史
+        git log --pretty=oneline
+        #使用命令根据指定的提交ID回退到指定版本
+        git reset --hard <CommitID>
+        #在旧版本中查看命令操作的历史
+        git reflog --pretty=oneline
+        #再次根据最新的提交ID，跳转到最新的版本
+        git reset --hard <CommitID>
      -->
 </body>
 </html>
